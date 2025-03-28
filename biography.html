@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style type = "text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: rgb(213,238,255);
+background: linear-gradient(180deg, rgba(213,238,255,1) 0%, rgba(246,248,213,1) 25%, rgba(246,248,213,1) 37%, rgba(246,248,213,1) 81%, rgba(156,255,197,1) 100%);
+            
+            color: #333;
+            margin: 20px;
+        }
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            font-size: 54px;
+            color:#0E6EAE ;
+            
+            margin-top: 50px;
+        }
+        hr {
+            width: 75%;
+            border: 1px solid #0E6EAE;
+        }
+        
+        p {
+            text-align: justify;
+            
+            line-height: 20px;
+            word-spacing: 5px;
+            font-weight:600;
+
+        }
+        blockquote {
+            background: #ffffff8a;
+            padding: 50px;
+            border-left: 7px solid #444;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            
+        }
+        sup {
+            font-size: 12px;
+            color: #777;
+        }
+        .nav-links {
+            text-align: center;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            }
+        .nav-links a {
+            text-decoration: none;
+            color: #0E6EAE;
+            font-size: 1em;
+            padding: 10px 20px;
+            border: 2px solid #0E6EAE; 
+            border-radius: 50px; 
+            width: 200px; 
+            transition: 0.3s;
+            margin: 0 20px;
+            background: transparent;
+            text-decoration: none;
+        }
+        .nav-links a:hover {
+            background: #0E6EAE;
+            color: #F6F8D5;
+        }
+        a.go-top {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background: #444;
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin-top: 10px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+            a.go-top:hover {
+            background: #222;
+            transform: scale(1.05);
+        }
+        h2 {
+            font-size: 27px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #333;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .container {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .img_container img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+            gap: 30px;
+            padding:0;
+            margin-left: 50px;
+            object-fit: cover;
+            aspect-ratio: 4/3;
+        }
+
+        .img_container img:hover {
+            transform: scale(1.05);
+        }
+        .img_container img {
+        width: 80%; 
+    }
+        .navbar {
+        
+        padding: 10px 0;
+        background:  #0E6EAE;
+        background: linear-gradient(321deg,#02bb5f  0%,  #0373BD 100%);
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        border-radius: 50px;
+        margin: 10px 50px 10px 10px;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: #F6F8D5;
+        font-size: 18px;
+        padding: 12px 24px;
+        border-radius: 30px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        
+    }
+
+    .navbar a:hover {
+        background-color: #F6F8D5;
+        color: #0E6EAE;
+        
+    }
+
+    .navbar a.active {
+        background-color: #F6F8D5;
+        color: #0E6EAE;
+    }
+    a.listcolor {
+        background-color: #F6F8D5;
+        color: #0E6EAE;
+    }
+    
+    
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+    </style>
+
+</head>
+<body>
+
+    <div class="navbar" >
+        <a href="index.html">Home</a>  
+        <a class="listcolor" href="biography.html">Biography</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="photogallery.html">Photo Gallery</a>
+        <a href="media.html">Media</a>
+        <a href="places.html">Places</a>
+        <a href="bucketlist.html">Bucket List</a>
+
+    </div>
+
+    <div align = "center">
+        <h1>Chasing Goals, Overcoming Struggles</h1>
+    </hr>
+    </div>
+
+    <div class="nav-links" id="top">
+        <a href="#childhood">Childhood Years</a>  
+        <a href="#teenage">Teenage Years</a>  
+        <a href="#college">College Years</a>
+    </div>
+
+
+    <div class="container" align="justify">
+        <h2 id="childhood">Childhood Years</h2>
+        <blockquote><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            John Stephen K. Fajardo was born on November 30, 2004, as the eldest of three siblings.<sup>1</sup> He grew up in Santa Maria, Bulacan, 
+            in a simple yet loving family.<sup>2</sup> Without a room of his own, he shared a bed with his family, which strengthened their bond.<sup>3</sup> He attended 
+            Cebu Sacred Heart College for his elementary years, where he consistently performed as an honor student.<sup>4</sup> Many people saw him as
+            a bright child because of his academic achievements.<sup>5</sup> However, he was a shy kid around strangers but quite playful at home.<sup>6</sup> 
+            His family often found him to be a bit of a nuisance, always joking around and making noise.<sup>7</sup> Despite his playful nature, he was
+            well-mannered and disciplined, thanks to the values instilled in him by his parents.<sup>8</sup> One of his favorite childhood activities was playing 
+            outdoors with friends.<sup>9</sup> He spent hours running around, climbing trees, and engaging in various games.<sup>10</sup> Like many children, he had a few childhood 
+            crushes that made his early years more exciting.<sup>11</sup> However, what truly captured his heart was basketball.<sup>12</sup> He developed a deep love for the sport at
+            an early age and played whenever he had the chance.<sup>13</sup> Whether practicing alone or playing with friends, he always felt happiest with a basketball 
+            in his hands.<sup>14</sup> His family supported his passion while ensuring that he remained focused on his studies.<sup>15</sup> He admired his parents for their 
+            hard work and sacrifices to provide for the family.<sup>16</sup> Their dedication inspired him to excel in school and make them proud.<sup>17</sup> He also enjoyed 
+            family gatherings, where they bonded over simple meals and laughter.<sup>18</sup> Despite the challenges of life, his childhood was filled with warmth, 
+            happiness, and valuable lessons.<sup>19</sup> Looking back, he remains grateful for the memories, experiences, and love that shaped his early years.<sup>20</sup>  
+        </p>
+            <div class="img_container">
+                
+                <a href="CHILDHOOD YEARS PICTURES/fam pic.jpg" title="Family Picture" target="_blank">
+                    <img src="CHILDHOOD YEARS PICTURES/fam pic.jpg" alt="Family Picture">
+                </a>
+                <a href="CHILDHOOD YEARS PICTURES/siblings 2.jpg" title="Siblings Together" target="_blank">
+                    <img src="CHILDHOOD YEARS PICTURES/siblings 2.jpg" alt="Siblings">
+                </a>
+                <a href="CHILDHOOD YEARS PICTURES/siblings.jpg" title="Sibling Bond" target="_blank">
+                    <img src="CHILDHOOD YEARS PICTURES/siblings.jpg" alt="Siblings">
+                </a>                <a href="CHILDHOOD YEARS PICTURES/grad pic childhood.jpg" title="Elementary Graduation Day" target="_blank">
+                    <img src="CHILDHOOD YEARS PICTURES/grad pic childhood.jpg" alt="Elementary Graduation">
+                </a>
+                
+           
+            </div>
+        </blockquote>
+    </div>
+    
+    <div class="nav-links">
+        <a href="#top"><i class="fa-solid fa-up-long"></i>    Go Top</a>
+    </div>
+    
+    
+    <div class="container" align="justify">
+        <h2 id="teenage">Teenage Years</h2>
+        <blockquote><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                His teenage years were a period of transformation, challenges, and unforgettable experiences.<sup>1</sup>  
+                At the age of 13, he underwent a significant milestone when he got circumcised, marking his transition into adolescence.<sup>2</sup>  
+                Puberty came gradually, but by the 9th grade, he experienced a sudden growth spurt that made him almost unrecognizable.<sup>3</sup>  
+                Before entering high school, he had to leave Cebu Sacred Heart College due to financial reasons.<sup>4</sup>  
+                As a result, he attended three different high schools, which proved to be a difficult adjustment.<sup>5</sup>  
+                In 9th grade, he transferred to Mater Dei Academy, where he met new friends and reconnected with old classmates from elementary school.<sup>6</sup>  
+                Some of the people he met there became lifelong friends whom he now considers family.<sup>7</sup>  
+                During these years, he experienced his first love, which was both exciting and overwhelming.<sup>8</sup>  
+                However, his teenage years also brought his first major heartbreak, which was difficult to overcome.<sup>9</sup>  
+                Despite this, he found comfort in his high school friends, who were always there to support him.<sup>10</sup>  
+                They would often go out after class, creating lasting memories together.<sup>11</sup>  
+                Basketball remained an essential part of his life, and he continued to play regularly, even participating in mini-leagues.<sup>12</sup>  
+                However, everything changed when the pandemic struck, forcing him to stay home and isolate from his friends.<sup>13</sup>  
+                During lockdown, he spent most of his days watching TV, playing video games, or endlessly scrolling through his phone.<sup>14</sup>  
+                It was a difficult period, but he eventually adapted to the situation.<sup>15</sup>  
+                After the pandemic, he was able to reunite with his friends and make up for the lost time.<sup>16</sup>  
+                As high school came to an end, he and his peers faced the stress of college admissions.<sup>17</sup>  
+                They spent countless hours discussing their future and contemplating which universities to apply to.<sup>18</sup>  
+                Despite the struggles, he cherished every moment of his teenage years.<sup>19</sup>  
+                Looking back, those years were a mixture of growth, heartache, and happiness.<sup>20</sup>  
+                
+            </p>
+            <div class="img_container">
+                <a href="TEENAGE YEARS PICTURES/prom pic.jpg" title="Memorable Prom Night" target="_blank">
+                    <img src="TEENAGE YEARS PICTURES/prom pic.jpg" alt="Prom Picture">
+                </a>
+                
+                <a href="TEENAGE YEARS PICTURES/grad pic.jpg" title="High School Graduation Day" target="_blank">
+                    <img style="object-position: top;" src="TEENAGE YEARS PICTURES/grad pic.jpg" alt="High School Graduation">
+                </a>
+                
+                <a href="TEENAGE YEARS PICTURES/friends 1.jpg" title="Unforgettable Moments with Friends" target="_blank">
+                    <img src="TEENAGE YEARS PICTURES/friends 1.jpg" alt="Friends">
+                </a>
+                
+                <a href="TEENAGE YEARS PICTURES/friends 2.jpg" title="Cherished Friendship Memories" target="_blank">
+                    <img src="TEENAGE YEARS PICTURES/friends 2.jpg" alt="Friends">
+                </a>
+                
+                
+            </div>
+        </blockquote>
+            <div class="nav-links">
+                <a href="#top"><i class="fa-solid fa-up-long"></i>    Go Top</a>
+            </div>
+    </div>
+
+    <div class="container" align="justify">
+        <h2 id="college">College Years</h2>
+        <blockquote><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Entering college in 2023 was a major transition that made him realize he was no longer a high school student.<sup>1</sup>  
+            In senior high, he took the HUMSS strand and was initially unsure about which program to pursue in college.<sup>2</sup>  
+            After careful consideration, he decided to take a Bachelor of Science in Information Technology at the University of the East (UE)-Manila.<sup>3</sup>  
+            Choosing a college was a challenging decision, but having multiple family members as UE alumni greatly influenced his choice.<sup>4</sup>  
+            He understood that this was the start of real life and that college would serve as the foundation for his future.<sup>5</sup>  
+            Adjusting to this new phase was not easy, as he deeply missed his high school friends and the familiar environment he once had.<sup>6</sup>  
+            However, it also opened up opportunities to meet new people who shared similar interests.<sup>7</sup>  
+            One of his biggest struggles was the daily two-hour commute from Bulacan to Manila, which was both exhausting and time-consuming.<sup>8</sup>  
+            Academically, he struggled with computer programming at first but gradually improved and became more proficient.<sup>9</sup>  
+            When his second year started, he found it even harder to manage his time due to longer school hours.<sup>10</sup>  
+            He had to sacrifice a lot of sleep just to keep up with his academic workload.<sup>11</sup>  
+            As semesters passed, he began losing touch with some friends due to different circumstances.<sup>12</sup>  
+            He also barely had the chance to see his hometown friends and high school family, making him feel increasingly disconnected.<sup>13</sup>  
+            Basketball, which was once a big part of his life, became something he could only enjoy during semestral breaks.<sup>14</sup>  
+            Despite these challenges, he gained his first work experience before the second semester of his second year as an assistant or encoder.<sup>15</sup>  
+            This opportunity gave him valuable insights into the professional world and helped him develop new skills.<sup>16</sup>  
+            While college life has been tough, it has also taught him resilience and independence.<sup>17</sup>  
+            He is determined to finish his studies on time to help relieve his parents of financial burdens.<sup>18</sup>  
+            Though the road ahead is uncertain, he remains motivated to push forward and make the most out of his college years.<sup>19</sup>  
+            Every challenge he faces now is just a stepping stone toward the future he is working hard to build.<sup>20</sup>  
+                
+        </p>
+        <div class="img_container">
+            <a href="COLLEGE YEARS PICTURES/UE.jpg" title="University of the East Campus" target="_blank">
+                <img src="COLLEGE YEARS PICTURES/UE.jpg" alt="UE Campus Picture">
+            </a>
+            
+            <a href="COLLEGE YEARS PICTURES/tropa.jpg" title="College Friends at UE" target="_blank">
+                <img src="COLLEGE YEARS PICTURES/tropa.jpg" alt="UE Friends">
+            </a>
+            
+            <a href="COLLEGE YEARS PICTURES/basketball.jpg" title="Basketball Moments with College Friends" target="_blank">
+                <img src="COLLEGE YEARS PICTURES/basketball.jpg" alt="Basketball with UE Friends">
+            </a>
+            
+            <a href="COLLEGE YEARS PICTURES/Beach Picture.png" title="Relaxing at the Beach" target="_blank">
+                <img src="COLLEGE YEARS PICTURES/Beach Picture.png" alt="Solo Beach Picture">
+            </a>
+            
+            
+        </div>
+    </blockquote>
+        <div class="nav-links">
+            <a href="#top"><i class="fa-solid fa-up-long"></i>    Go Top</a>  <a href="index.html"><i class="fa-solid fa-house"></i>    Home</a>
+        </div>
+    </div>
+
+
+</body>
+</html>

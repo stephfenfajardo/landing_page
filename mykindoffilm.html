@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style type = "text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: rgb(213,238,255);
+background: linear-gradient(180deg, rgba(213,238,255,1) 0%, rgba(246,248,213,1) 25%, rgba(246,248,213,1) 37%, rgba(246,248,213,1) 81%, rgba(156,255,197,1) 100%);
+            
+            color: #333;
+            margin: 20px;
+        }
+       
+        
+        
+        
+        .nav-links {
+            text-align: center;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            }
+        .nav-links a {
+            text-decoration: none;
+            color: #0E6EAE;
+            font-size: 1em;
+            padding: 10px 20px;
+            border: 2px solid #0E6EAE; 
+            border-radius: 50px; 
+            width: 200px; 
+            transition: 0.3s;
+            margin: 0 20px;
+            background: transparent;
+            text-decoration: none;
+        }
+        .nav-links a:hover {
+            background: #0E6EAE;
+            color: #F6F8D5;
+        }
+        a.go-top {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background: #444;
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin-top: 10px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+            a.go-top:hover {
+            background: #222;
+            transform: scale(1.05);
+        }
+       
+        
+
+        .navbar {
+        
+        padding: 10px 0;
+        background:  #0E6EAE;
+        background: linear-gradient(321deg,#02bb5f  0%,  #0E6EAE 100%);
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        border-radius: 50px;
+        margin: 10px 50px 10px 10px;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: #F6F8D5;
+        font-size: 18px;
+        padding: 12px 24px;
+        border-radius: 30px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        
+    }
+
+    .navbar a:hover {
+        background-color: #F6F8D5;
+        color: #0E6EAE;
+        
+    }
+
+    .navbar a.active {
+        background-color: #F6F8D5;
+        color: #0E6EAE;
+    }
+    a.listcolor {
+        background-color: #F6F8D5;
+        color: #0E6EAE;
+    }
+    
+    
+    h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #0E6EAE;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 100px;
+    }
+
+    
+
+    h2 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.25em;
+            font-weight: bold;
+            text-align: left;
+            color: #0E6EAE;
+            
+            margin-top: 70px;
+        }
+
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            font-size: 54px;
+            color:#0E6EAE ;
+            
+            margin-top: 50px;
+        }
+       
+.movie_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.container {
+    background: rgba(3, 115, 189, 0.05);
+    border-radius: 20px;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    
+    overflow: hidden;
+}
+
+
+
+.container img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    height: 180px;
+}
+
+.title {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #0E6EAE;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    font-size: 0.95em;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+ video {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+video:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    color: #0E6EAE;
+    margin-top: 30px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    video {
+        width: 100%;
+    }
+}
+
+
+        
+    </style>
+
+</head>
+<body>
+
+    <div class="navbar" >
+        <a href="index.html">Home</a>  
+        <a  href="biography.html">Biography</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="photogallery.html">Photo Gallery</a>
+        <a class="listcolor" href="media.html">Media</a>
+        <a href="places.html">Places</a>
+        <a href="bucketlist.html">Bucket List</a>
+    </div>
+
+    <h1 id="top">My Kind of Films</h1>
+    
+
+    <h2><i class="fa-solid fa-tv"></i> TV Shows</h2>
+<div class="movie_container">
+    <div class="container">
+        <img src="Beat and Movies/friends.webp" alt="Friends">
+        <div class="title">Friends</div>
+        <p>Year: 1994-2004</p>
+            <p>Cast: Jennifer Aniston, Courteney Cox, Lisa Kudrow, Matt LeBlanc, Matthew Perry, David Schwimmer</p>
+            <video controls width="400">
+                <source src="Media/Movie and TV clips/The Chair Fight _ Friends.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+    </div>
+
+    <div class="container">
+        <img style="object-position: top;" src="Beat and Movies/brooklyn.jpg" alt="Brooklyn Nine-Nine">
+        <div class="title">Brooklyn Nine-Nine</div>
+        <p>Year: 2013-2021</p>
+            <p>Cast: Andy Samberg, Stephanie Beatriz, Terry Crews, Melissa Fumero, Joe Lo Truglio,
+                 Chelsea Peretti, Andre Braugher, Dirk Blocker, Joel McKinnon Miller</p>
+                 <video controls width="400">
+                    <source src="Media/Movie and TV clips/I Want It That Way _ Brooklyn Nine-Nine.mp4"video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+    </div>
+
+    
+</div>
+
+<h2><i class="fa-solid fa-film"></i></i> Movies</h2>
+<div class="movie_container">
+    <div class="container">
+        <img style="object-position: bottom;" src="Beat and Movies/la la land.jpeg" alt=">La La Land">
+        <div class="title">La La Land</div>
+        <p>Year: 2016</p>
+            <p>Cast: 
+                Ryan Gosling, Emma Stone, John Legend, Rosemarie DeWitt, J.K. Simmons</p>
+                <video controls width="400">
+                    <source src="Media/Movie and TV clips/La La Land.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+    
+    </div>
+
+    <div class="container">
+        <img src="Beat and Movies/the notebook.jpg" alt="The Notebook">
+        <div class="title">The Notebook</div>
+        <p>Year: 2004</p>
+        <p>Cast: Ryan Gosling, Rachel McAdams, James Garner, Gena Rowlands, Joan Allen, James Marsden</p>
+        <video controls width="400">
+            <source src="Media/Movie and TV clips/The Notebook best scene.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    
+</div>
+
+<div class="nav-links">
+    <a href="#top"><i class="fa-solid fa-up-long"></i>    Go Top</a>  <a href="media.html"><i class="fa-solid fa-compact-disc"></i>   Media</a>
+</div>
+
+</body>
+</html>

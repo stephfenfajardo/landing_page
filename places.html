@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style type = "text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: rgb(213,238,255);
+background: linear-gradient(180deg, rgba(213,238,255,1) 0%, rgba(246,248,213,1) 25%, rgba(246,248,213,1) 37%, rgba(246,248,213,1) 81%, rgba(156,255,197,1) 100%);
+            height: 200vh;
+            color: #333;
+            margin: 20px;
+        }
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            font-size: 54px;
+            color:#0E6EAE ;
+            
+            margin-top: 50px;
+        }
+        
+        .nav-links {
+            text-align: center;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            }
+        .nav-links a {
+            text-decoration: none;
+            color: #0E6EAE;
+            font-size: 1em;
+            padding: 10px 20px;
+            border: 2px solid #0E6EAE; 
+            border-radius: 50px; 
+            width: 200px; 
+            transition: 0.3s;
+            margin: 0 20px;
+            background: transparent;
+            text-decoration: none;
+        }
+        .nav-links a:hover {
+            background: #0E6EAE;
+            color: #F6F8D5;
+        }
+        a.go-top {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background: #444;
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin-top: 10px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+            a.go-top:hover {
+            background: #222;
+            transform: scale(1.05);
+        }
+        h2 {
+            font-size: 27px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #0E6EAE;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        
+        .navbar {
+        
+        padding: 10px 0;
+        background:  #0E6EAE;
+        background: linear-gradient(321deg,#02bb5f  0%,  #0E6EAE 100%);
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        border-radius: 50px;
+        margin: 10px 50px 10px 10px;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: #F6F8D5;
+        font-size: 18px;
+        padding: 12px 24px;
+        border-radius: 30px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        
+    }
+
+    .navbar a:hover {
+        background-color: #F6F8D5;
+        color: #0E6EAE;
+        
+    }
+
+    .navbar a.active {
+        background-color: #F6F8D5;
+        color: #0E6EAE;
+    }
+    a.listcolor {
+        background-color: #F6F8D5;
+        color: #0E6EAE;
+    }
+    
+    .image-container img{
+        margin-top: 50px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border:  solid #fff; 
+        border-width: 15px 15px 175px 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); 
+    transform: rotate(-5deg);transform: rotate(-5deg);
+transition: transform 0.3s ease-in-out;        }
+
+        img:hover {
+            transform: rotate(-5deg) scale(1.05);
+            box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+      
+
+        .container {
+            width: 75%;
+            margin-top: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+            overflow: hidden;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-left: 7px solid #444;
+        }
+        .container img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            
+            
+            max-width: 800px; 
+    height: 350px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+.container p {
+    text-align: justify;
+    line-height: 20px;
+            word-spacing: 5px;
+            font-weight:400;
+}
+
+
+
+
+
+
+        
+    </style>
+
+</head>
+<body>
+
+    <div class="navbar" >
+        <a href="index.html">Home</a>  
+        <a  href="biography.html">Biography</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="photogallery.html">Photo Gallery</a>
+        <a href="media.html">Media</a>
+        <a class="listcolor" href="places.html">Places</a>
+        <a href="bucketlist.html">Bucket List</a>
+
+    </div>
+
+
+    <div align = "center">
+        <h1>Places I Want to Visit</h1>
+    </hr>
+    </div>
+
+    <div class="container">
+        <h2><i class="fa-solid fa-thumbtack"></i> Explore My Dream Destinations</h2>
+        <p><blockquote>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to my dream destinations! Each of these places holds
+             a special significance for me, inspired by the captivating stories told through movies,
+              series, and historical tales. From the dazzling lights of Tokyo to the timeless wonders
+               of the Pyramids of Giza, these locations evoke a sense of adventure, romance, and
+                cultural discovery.
+
+            Click on any image to learn why I dream of visiting that place, how to get there, and the exciting sights to explore in the surrounding areas. </p>
+        </blockquote></div>
+
+
+    <div class="image-container" align="center">
+        <img src="Media/5Places.png" alt="The places I want to visit" usemap="#places">
+        <map name="places"> 
+            <area shape="rect" coords="130,38,375,204" href="paris.html" target="newSpace" title="Eiffel Tower, Paris">
+            <area shape="rect" coords="571,249,830,443" href="hollywood.html" target="newSpace" title="Hollywood Sign, Los Angeles">
+            <area shape="circle" coords="550,128,112" href="tokyo.html" target="newSpace" title="Tokyo">
+            <area shape="circle" coords="108,361,159" href="liberty.html" target="newSpace" title="Statue of Liberty, New York">
+            <area shape="poly" coords="224,472, 242,446, 254,427, 261,409, 264,400, 265,371, 266,355, 263,338, 423,187, 565,316, 
+            570,449, 717,449, 731,470, 224,472" href="pyramid.html" target="newSpace" title="Pyramid of Giza, Egypt">
+        </map>
+        
+    </div>
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style type = "text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: rgb(213,238,255);
+background: linear-gradient(180deg, rgba(213,238,255,1) 0%, rgba(246,248,213,1) 25%, rgba(246,248,213,1) 37%, rgba(246,248,213,1) 81%, rgba(156,255,197,1) 100%);
+            
+            color: #333;
+            margin: 20px;
+        }
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            font-size: 54px;
+            color:#0E6EAE ;
+            
+            margin-top: 50px;
+        }
+       
+        .nav-links {
+            text-align: center;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            }
+        .nav-links a {
+            text-decoration: none;
+            color: #0E6EAE;
+            font-size: 1em;
+            padding: 10px 20px;
+            border: 2px solid #0E6EAE; 
+            border-radius: 50px; 
+            width: 200px; 
+            transition: 0.3s;
+            margin: 0 20px;
+            background: transparent;
+            text-decoration: none;
+        }
+        .nav-links a:hover {
+            background: #0E6EAE;
+            color: #F6F8D5;
+        }
+        a.go-top {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background: #444;
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin-top: 10px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+            a.go-top:hover {
+            background: #222;
+            transform: scale(1.05);
+        }
+        h2 {
+            font-size: 27px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #0E6EAE;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        
+        .img_container img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+            gap: 30px;
+            padding:0;
+            margin-left: 50px;
+            object-fit: cover;
+            aspect-ratio: 4/3;
+        }
+
+        .img_container img:hover {
+            transform: scale(1.05);
+        }
+        .img_container img {
+        width: 80%; 
+    }
+        .navbar {
+        
+        padding: 10px 0;
+        background:  #0E6EAE;
+        background: linear-gradient(321deg,#02bb5f  0%,  #0E6EAE 100%);
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        border-radius: 50px;
+        margin: 10px 50px 10px 10px;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: #F6F8D5;
+        font-size: 18px;
+        padding: 12px 24px;
+        border-radius: 30px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        
+    }
+
+    .navbar a:hover {
+        background-color: #F6F8D5;
+        color: #0E6EAE;
+        
+    }
+
+    .navbar a.active {
+        background-color: #F6F8D5;
+        color: #0E6EAE;
+    }
+    a.listcolor {
+        background-color: #F6F8D5;
+        color: #0E6EAE;
+    }
+    
+    .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #ffffff31;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: auto;
+    margin-top: 75px;
+    
+}
+
+  
+  .image-container {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .hover-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 40px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .image-container:hover .hover-text {
+    opacity: 1;
+  }
+  
+  .description {
+    color: #333;
+    padding: 40px;
+    text-align: left;
+    font-size: 18px;
+  }
+  
+  .description h1 {
+    font-size: 32px;
+    color: #333;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+  
+  .description p {
+    line-height: 1.8;
+    margin: 0;
+    padding-bottom: 30px;
+  }
+  
+  ul {
+    line-height: 45px;
+  }
+  
+  .places {
+    margin: 10px;
+    display: inline-flex;
+    justify-content: center;
+    
+    gap: 30px;
+    padding-bottom: 20px;
+  }
+  
+  .places a {
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  .places img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .places img:hover {
+    transform: scale(1.05);
+  }
+  
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+    </style>
+
+</head>
+<body>
+
+    <div class="navbar" >
+        <a href="index.html">Home</a>  
+        <a  href="biography.html">Biography</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="photogallery.html">Photo Gallery</a>
+        <a href="media.html">Media</a>
+        <a class="listcolor" href="places.html">Places</a>
+        <a href="bucketlist.html">Bucket List</a>
+
+    </div>
+
+ 
+
+    <div class="container">
+        <div class="image-container">
+          <img src="Media/egypt.png" alt="Pyramid of Giza" />
+          <div class="overlay"></div>
+            <h2 class="hover-text">Pyramid of Giza, Egypt</h2>
+        </div>
+        <div class="description">
+          <p>
+            The Pyramid of Giza is a testament to ancient Egyptian engineering and culture. 
+            Visiting this UNESCO World Heritage Site offers a profound connection to the past.
+
+            <br><br>Visiting the Pyramids of Giza has been a dream since watching documentaries and movies like Transformers: Revenge of the Fallen. The sheer size and ancient history behind these structures are awe-inspiring. Experiencing the remnants of such a grand civilization would feel like traveling back in time.
+          </p>
+          
+          <h1>How to Get There</h1>
+          <p>
+            Fly to Cairo International Airport (CAI). From there, you can hire a taxi or book a guided tour to Giza,
+             which is about a 30-minute drive from Cairo.
+          </p>
+    
+          <h1>Other Places to Visit in Egypt</h1>
+    
+          <ul type="disc">
+            <li> <b> Egyptian Museum</b>: Houses an extensive collection of ancient artifacts.</li>
+            <li><b>Khan El Khalili</b>: A bustling market where you can shop for souvenirs. </li>
+            <li><b>Luxor</b>: Visit the Valley of the Kings and Karnak Temple.</li>
+            <li><b>Nile River Cruises</b>: Experience a relaxing boat ride along the iconic river.</li>
+          </ul>
+    
+          <div class="places">
+            <a href="Other Places/Egyptian Museum.jpg" target="places"><img src="Other Places/Egyptian Museum.jpg" alt="Egyptian Museum" title="Egyptian Museum" /></a>
+            <a href="Other Places/Khan El Khalil.jpg" target="places"><img src="Other Places/Khan El Khalil.jpg" alt="Khan El Khalil" title="Khan El Khalil" /></a>
+            <a href="Other Places/Luxor.webp" target="places"><img src="Other Places/Luxor.webp" alt="Luxor" title="Luxor" /></a>
+            <a href="Other Places/Nile River Cruises.webp" target="places"><img src="Other Places/Nile River Cruises.webp" alt="Nile River Cruises" title="Nile River Cruises" /></a>
+          </div>
+    
+        </div>
+      </div>
+    
+        
+    </div>
+
+    <div class="nav-links">
+      <a href="places.html"><i class="fa-solid fa-left-long"></i></i>   Back</a> <a href="#top"><i class="fa-solid fa-up-long"></i>    Go Top</a>  
+    </div>
+</body>
+</html>

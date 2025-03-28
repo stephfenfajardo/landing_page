@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style type = "text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: rgb(213,238,255);
+background: linear-gradient(180deg, rgba(213,238,255,1) 0%, rgba(246,248,213,1) 25%, rgba(246,248,213,1) 37%, rgba(246,248,213,1) 81%, rgba(156,255,197,1) 100%);
+            
+            color: #333;
+            margin: 20px;
+        }
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            font-size: 54px;
+            color: #0E6EAE;
+            margin-top: 50px;
+        }
+        hr {
+            width: 75%;
+            border: 1px solid #0E6EAE;
+        }
+        
+        p {
+            text-align: justify;
+            
+            line-height: 20px;
+            word-spacing: 5px;
+            font-weight:600;
+
+        }
+        blockquote {
+            background: #ffffff8a;
+            padding: 50px;
+            border-left: 7px solid #444;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            
+        }
+        sup {
+            font-size: 12px;
+            color: #777;
+        }
+        .nav-links {
+            text-align: center;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            }
+        .nav-links a {
+            text-decoration: none;
+            color: #0E6EAE;
+            font-size: 1em;
+            padding: 10px 20px;
+            border: 2px solid #0E6EAE; 
+            border-radius: 50px; 
+            width: 200px; 
+            transition: 0.3s;
+            margin: 0 20px;
+            background: transparent;
+        }
+        .nav-links a:hover {
+            background: #0E6EAE;
+            color: #F6F8D5;
+        }
+        a.go-top {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background: #444;
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin-top: 10px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+            a.go-top:hover {
+            background: #222;
+            transform: scale(1.05);
+        }
+        h2 {
+            font-size: 27px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #333;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .container {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .img_container img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+            gap: 30px;
+            padding:0;
+            margin-left: 50px;
+            object-fit: cover;
+            aspect-ratio: 4/3;
+        }
+
+        .img_container img:hover {
+            transform: scale(1.05);
+        }
+        .img_container img {
+        width: 80%; 
+    }
+    .navbar {
+        
+        padding: 10px 0;
+        background:  #0E6EAE;
+        background: linear-gradient(321deg,#02bb5f  0%,  #0E6EAE 100%);
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        border-radius: 50px;
+        margin: 10px 50px 10px 10px;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: #F6F8D5;
+        font-size: 18px;
+        padding: 12px 24px;
+        border-radius: 30px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        
+    }
+
+    .navbar a:hover {
+        background-color: #F6F8D5;
+        color: #0E6EAE;
+        
+    }
+
+    .navbar a.active {
+        background-color: #F6F8D5;
+        color: #0E6EAE;
+    }
+    a.listcolor {
+        background-color: #F6F8D5;
+        color: #0E6EAE;
+    }
+    
+    
+
+        
+    </style>
+
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>  
+        <a href="biography.html">Biography</a>
+        <a class="listcolor" href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="photogallery.html">Photo Gallery</a>
+        <a href="media.html">Media</a>
+        <a href="places.html">Places</a>
+        <a href="bucketlist.html">Bucket List</a>
+    </div>
+
+    <div align = "center">
+        <h1>Skills, Hobbies, and Interests</h1>
+    </hr>
+    </div>
+
+   <div class="nav-links" id="top">
+            <a href="#skills">Skills</a> 
+            <a href="#hobbies">Hobbies</a>
+            <a href="#interests">Interests</a>
+        </div>
+
+
+    <div class="container" align="justify">
+        <h2 id="skills">My Skills</h2>
+        <blockquote><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      Over the years, I have developed a wide range of skills that help me in both academic and personal growth. 
+            One of my strongest skills is computer programming, specifically in C# and Java, which I have improved significantly during my IT studies. 
+            I am also proficient in Microsoft Office applications like Word, Excel, and PowerPoint, which aid me in creating documents and presentations efficiently. 
+            Another key skill I possess is problem-solving, allowing me to analyze complex situations and find logical solutions. My ability to manage time effectively has been essential, 
+            especially when balancing schoolwork and personal responsibilities. I have also gained experience in data entry and encoding, a skill I honed during my internship. 
+            Communication is another strength, as I can express ideas clearly both in writing and verbally. Being adaptable, I can quickly adjust to different situations, 
+            whether in school, work, or social settings. Teamwork is something I excel in, as I can collaborate well with others to achieve common goals. 
+            In addition, I have learned basic graphic design using tools like Canva and Photoshop. I am also skilled in research, allowing me to gather, analyze, and present data effectively. 
+            My attention to detail ensures accuracy in tasks, whether it be coding, writing, or organizing information. Leadership is another skill I have developed, 
+            especially when working on group projects. I am also proficient in troubleshooting basic computer issues, which helps me assist others when needed. 
+            My ability to learn quickly allows me to adapt to new technologies and tools with ease. I am confident in my ability to work under pressure, 
+            especially when facing deadlines. I have also enhanced my critical thinking skills, enabling me to make informed decisions. Writing is another skill I possess, 
+            particularly in crafting essays, reports, and research papers. Lastly, my creativity allows me to think outside the box and approach problems from different perspectives.
+        </p>
+        <div class="img_container">
+                
+            <a href="Skills/microsoft.png" title="Proficiency in Microsoft Office (Word, Excel, PowerPoint)" target="_blank">
+                <img src="Skills/microsoft.png" alt="Microsoft Office Logo">
+            </a>
+            
+            <a href="Skills/csharp.png" title="Programming Skills in C#" target="_blank">
+                <img src="Skills/csharp.png" alt="C# Logo">
+            </a>
+            
+            <a href="Skills/java.png" title="Java Programming Expertise" target="_blank">
+                <img src="Skills/java.png" alt="Java Logo">
+            </a>
+            
+            <a href="Skills/canva.png" title="Graphic Design Skills Using Canva" target="_blank">
+                <img src="Skills/canva.png" alt="Canva Logo">
+            </a>
+            
+        </blockquote>
+    </div>
+    
+    <div class="nav-links">
+        <a href="#top"><i class="fa-solid fa-up-long"></i>    Go Top</a>
+    </div>
+    
+    
+    <div class="container" align="justify">
+        <h2 id="hobbies">My Hobbies</h2>
+        <blockquote><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               Hobbies play a significant role in my life, giving me a way to relax and enjoy my free time. One of my favorite hobbies is playing basketball, 
+            a sport I have loved since childhood. Whenever I have time, I enjoy shooting hoops and playing pickup games with friends. Watching basketball games, 
+            especially the NBA, is also something I love doing. Another hobby I have is playing video games, which allows me to unwind after long school hours. 
+            I particularly enjoy strategy and sports games because they challenge my thinking and reflexes. Listening to music is another hobby that helps me relax and stay motivated. 
+            I enjoy various genres, including pop, hip-hop, and OPM. Playing the guitar is another hobby that keeps me entertained and inspired. 
+            Watching movies and TV shows is something I do when I want to escape reality and enjoy different stories. I also like editing photos and videos for fun, 
+            experimenting with different filters and effects. Occasionally, I write short stories or personal reflections, using writing as a form of self-expression. 
+            Exploring new places, especially food spots, is another hobby I enjoy whenever I have the chance. Socializing with friends, whether online or in person, 
+            is something I prioritize. I also love browsing social media, keeping up with trends, and learning new things. During breaks, I enjoy biking around my neighborhood, 
+            which helps me stay active. Drawing and sketching, though not something I do often, is a creative outlet I enjoy from time to time. Playing board games and card games 
+            with friends and family is another activity I find entertaining. I also spend time learning new skills online, whether it's coding, design, or productivity tips. 
+            Traveling, even if it's just short trips, is something I look forward to as it refreshes my mind. Lastly, I enjoy cooking simple meals whenever I get the chance, 
+            experimenting with different flavors and ingredients. 
+                
+            </p>
+            <div class="img_container">
+                
+                <a href="Hobbies/basketball.png" title="Playing Basketball - My Favorite Sport" target="_blank">
+                    <img src="Hobbies/basketball.png" alt="Basketball Picture">
+                </a>
+                
+                <a href="Hobbies/guitar.jpg" title="Playing Guitar - A Passion for Music" target="_blank">
+                    <img src="Hobbies/guitar.jpg" alt="Guitar">
+                </a>
+                
+                <a href="Hobbies/social media.jpg" title="Exploring Social Media Trends" target="_blank">
+                    <img src="Hobbies/social media.jpg" alt="Social Media">
+                </a>
+                
+                <a href="Hobbies/drawing.jpg" title="Creative Drawing and Sketching" target="_blank">
+                    <img src="Hobbies/drawing.jpg" alt="Drawing">
+                </a>
+                
+            </div>   
+        </blockquote>
+            <div class="nav-links">
+                <a href="#top"><i class="fa-solid fa-up-long"></i>    Go Top</a>
+            </div>
+    </div>
+
+    <div class="container" align="justify">
+        <h2 id="interests">My Interests</h2>
+        <blockquote><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            My interests shape the way I see the world and what I aspire to do in the future. One of my biggest interests is technology, 
+            as I am fascinated by how it continues to evolve and change lives. I enjoy learning about artificial intelligence, cybersecurity, 
+            and software development. Business and entrepreneurship are also topics that interest me, as I one day hope to start my own business. 
+            Digital marketing is another field I find intriguing, especially how social media influences consumer behavior. Aside from technology, 
+            I am also interested in psychology and human behavior, particularly how people make decisions. I have a strong curiosity about finance, 
+            learning about saving, investing, and managing money effectively. Web development is another area of interest, as I enjoy designing and creating functional websites. 
+            Networking and meeting like-minded people is something I find valuable, as I love exchanging ideas and learning from others. 
+            Sports analytics is also something I find interesting, as it combines my love for sports and data analysis. Aside from these, 
+            I am interested in the latest gadgets, from smartphones to gaming devices. I also enjoy studying different cultures and languages, as I believe global knowledge is important. 
+            Space and astronomy fascinate me, especially the possibility of space exploration in the future. Learning about history and how it has shaped the modern world is another interest of mine. 
+            Photography is something I want to explore more, as capturing moments and telling stories through pictures interests me. I also love learning about productivity 
+            and self-improvement strategies to enhance my daily life. Watching documentaries about crime, science, and world events fuels my curiosity. 
+            Artificial intelligence and how it impacts industries is another area I closely follow. Lastly, I am interested in staying updated with current events, 
+            ensuring I am aware of what is happening in the world.
+                
+        </p>
+        <div class="img_container">
+                
+                
+            <a href="Interests/coding.jpg" title="Passion for Coding and Software Development" target="_blank">
+                <img src="Interests/coding.jpg" alt="Coding">
+            </a>
+            
+            <a href="Interests/psychology.jpg" title="Fascination with Human Behavior and Psychology" target="_blank">
+                <img src="Interests/psychology.jpg" alt="Psychology">
+            </a>
+            
+            <a href="Interests/sports analytics.jpg" title="Analyzing Sports Statistics and Performance" target="_blank">
+                <img src="Interests/sports analytics.jpg" alt="Sports Analytics">
+            </a>
+            
+            <a href="Interests/photography.jpg" title="Exploring the Art of Photography" target="_blank">
+                <img src="Interests/photography.jpg" alt="Photography">
+            </a>
+            
+            </div>
+    </blockquote>
+        <div class="nav-links">
+            <a href="#top"><i class="fa-solid fa-up-long"></i>    Go Top</a>  <a href="index.html"><i class="fa-solid fa-house"></i>    Home</a>
+        </div>
+    </div>
+
+
+</body>
+</html>
+

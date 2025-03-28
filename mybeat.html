@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style type = "text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: rgb(213,238,255);
+background: linear-gradient(180deg, rgba(213,238,255,1) 0%, rgba(246,248,213,1) 25%, rgba(246,248,213,1) 37%, rgba(246,248,213,1) 81%, rgba(156,255,197,1) 100%);
+            
+            color: #333;
+            margin: 20px;
+        }
+       
+        
+        
+        
+        .nav-links {
+            text-align: center;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            }
+        .nav-links a {
+            text-decoration: none;
+            color: #0E6EAE;
+            font-size: 1em;
+            padding: 10px 20px;
+            border: 2px solid #0E6EAE; 
+            border-radius: 50px; 
+            width: 200px; 
+            transition: 0.3s;
+            margin: 0 20px;
+            background: transparent;
+            text-decoration: none;
+        }
+        .nav-links a:hover {
+            background: #0E6EAE;
+            color: #F6F8D5;
+        }
+        a.go-top {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background: #444;
+            padding: 8px 12px;
+            border-radius: 5px;
+            margin-top: 10px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+            a.go-top:hover {
+            background: #222;
+            transform: scale(1.05);
+        }
+       
+        
+
+        .navbar {
+        
+        padding: 10px 0;
+        background:  #0E6EAE;
+        background: linear-gradient(321deg,#02bb5f  0%,  #0E6EAE 100%);
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        border-radius: 50px;
+        margin: 10px 50px 10px 10px;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: #F6F8D5;
+        font-size: 18px;
+        padding: 12px 24px;
+        border-radius: 30px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        
+    }
+
+    .navbar a:hover {
+        background-color: #F6F8D5;
+        color: #0E6EAE;
+        
+    }
+
+    .navbar a.active {
+        background-color: #F6F8D5;
+        color: #0E6EAE;
+    }
+    a.listcolor {
+        background-color: #F6F8D5;
+        color: #0E6EAE;
+    }
+    
+    
+    h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #0E6EAE;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 100px;
+    }
+
+    
+
+        h2 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+            color: #0E6EAE;
+            
+            margin-top: 70px;
+        }
+
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            font-size: 54px;
+            color:#0E6EAE ;
+            
+            margin-top: 50px;
+        }
+        .music_container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .container {
+            background: rgba(3, 115, 189, 0.1);
+            border-radius: 20px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .container img {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+
+        .title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #0E6EAE;
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: #555;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        audio {
+            width: 100%;
+            border-radius: 10px;
+            
+        }
+
+
+        
+    </style>
+
+</head>
+<body>
+
+    <div class="navbar" >
+        <a href="index.html">Home</a>  
+        <a  href="biography.html">Biography</a>
+        <a href="skills.html">Skills</a>
+        <a href="resume.html">Resume</a>
+        <a href="photogallery.html">Photo Gallery</a>
+        <a class="listcolor" href="media.html">Media</a>
+        <a href="places.html">Places</a>
+        <a href="bucketlist.html">Bucket List</a>
+    </div>
+
+    <h1 id="top">My Beat</h1>
+    
+
+    <h2>R&B</h2>
+<div class="music_container">
+    <div class="container">
+        <img src="Beat and Movies/futuresex.png" alt="Justin Timberlake">
+        <div class="title">Until the End of Time</div>
+        <p>Justin Timberlake</p>
+        <audio controls>
+            <source src="Media/Music/Until The End Of Time.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div class="container">
+        <img src="Beat and Movies/futuresex.png" alt="Justin Timberlake">
+        <div class="title">What Goes Around... /... Comes Around (Interlude)</div>
+        <p>Justin Timberlake</p>
+        <audio controls>
+            <source src="Media/Music/What Goes Around.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div class="container">
+        <img src="Beat and Movies/Celebrity_cover.png" alt="*NSYNC feat. Nelly">
+        <div class="title">Girlfriend (The Neptunes Remix) </div>
+        <p>*NSYNC feat. Nelly</p>
+        <audio controls>
+            <source src="Media/Music/Girlfriend (The Neptunes Remix).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</div>
+
+<h2>Ballad</h2>
+<div class="music_container">
+    <div class="container">
+        <img src="Beat and Movies/No strings attached.png" alt="*NSYNC">
+        <div class="title">This I Promise You</div>
+        <p>*NSYNC</p>
+        <audio controls>
+            <source src="Media/Music/This I Promise You.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div class="container">
+        <img src="Beat and Movies/Sign of the Times.png" alt="Sign of the Times">
+        <div class="title">Sign of the Times</div>
+        <p>Harry Styles</p>
+        <audio controls>
+            <source src="Media/Music/Sign of the Times.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div class="container">
+        <img src="Beat and Movies/Little Things.png" alt="Little Things">
+        <div class="title">Little Things</div>
+        <p>One Direction</p>
+        <audio controls>
+            <source src="Media/Music/Little Things (mp3cut.net).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</div>
+
+<h2>Pop</h2>
+<div class="music_container">
+    <div class="container">
+        <img src="Beat and Movies/futuresex.png" alt="SexyBack">
+        <div class="title">SexyBack</div>
+        <p>Justin Timberlake, Timbaland</p>
+        <audio controls>
+            <source src="Media/Music/SexyBack (mp3cut.net).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div class="container">
+        <img src="Beat and Movies/iris.jfif" alt="Iris">
+        <div class="title">Iris</div>
+        <p>The Goo Goo Dolls</p>
+        <audio controls>
+            <source src="Media/Music/Iris (mp3cut.net).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div class="container">
+        <img src="Beat and Movies/About You.jpg" alt="About You">
+        <div class="title">About You</div>
+        <p>The 1975</p>
+        <audio controls>
+            <source src="Media/Music/About You (mp3cut.net).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</div>
+
+<div class="nav-links">
+    <a href="#top"><i class="fa-solid fa-up-long"></i>    Go Top</a>  <a href="media.html"><i class="fa-solid fa-compact-disc"></i>   Media</a>
+</div>
+
+</body>
+</html>
